@@ -143,7 +143,7 @@
 		width: "100%",
 		height: "400px",
 		fontSize: "14px",
-		theme: "sqlServer",
+		theme: "sqlserver",
 		softTabs: !0,
 		fullscreen: !0,
 		imageUpload: !1,
