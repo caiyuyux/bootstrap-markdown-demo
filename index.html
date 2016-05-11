@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-markdown-editor.css"/>
+    <link rel="stylesheet" href="css/rainbow.css"/>
+    <link rel="stylesheet" href="css/css.css"/>
+</head>
+<body>
+    <div class="container">
+        <textarea name="text" id="editor">###title</textarea>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-markdown-editor.js"></script>
+<script type="text/javascript" src="js/ace-builds/src-noconflict/ace.js"></script>
+<script type="text/javascript" src="js/marked.min.js"></script>
+<script type="text/javascript" src="js/highlight.pack.js"></script>
+
+<script>
+    jQuery(document).ready(function($) {
+        $('#editor').markdownEditor({
+            preview: true,
+            onPreview: function (content, callback) {
+                callback( marked(content) );
+            }
+        });
+    });
+</script>
+</html>
+
