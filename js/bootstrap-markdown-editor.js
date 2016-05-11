@@ -141,7 +141,7 @@
 		return g[b] ? g[b].apply(this, Array.prototype.slice.call(arguments, 1)) : "object" != typeof b && b ? void a.error("Method " + b + " does not exist on jQuery.markdownEditor") : g.init.apply(this, arguments)
 	}, a.fn.markdownEditor.defaults = {
 		width: "100%",
-		height: "400px",
+		height: "350px",
 		fontSize: "14px",
 		theme: "sqlserver",
 		softTabs: !0,
